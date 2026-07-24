@@ -144,6 +144,11 @@ async fn run_shell_intercept(cli: &Cli) -> Result<()> {
         render::StreamRenderer::new_with_reasoning(local.show_reasoning),
     ));
 
+    {
+        let r = renderer.lock().unwrap();
+        r.show_spinner("thinking...");
+    }
+
     let r = renderer.clone();
     let result = client
         .chat_stream(&sess.messages, &[], move |chunk| {
@@ -174,7 +179,7 @@ fn install_fish_hook() -> Result<()> {
 
     let func_path = format!("{func_dir}/fish_command_not_found.fish");
     let content = r#"function fish_command_not_found
-    miyu --shell-intercept "$argv" ^/dev/null
+    miyu --shell-intercept "$argv"
 end
 "#;
 

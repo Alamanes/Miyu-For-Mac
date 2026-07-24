@@ -1,6 +1,16 @@
 # Miyu for Mac
 
-A terminal AI assistant for macOS. Miyu lives in your shell, intercepts unknown commands, streams LLM responses in real time, and maintains conversation context across your terminal session.
+A terminal AI assistant for macOS — rewritten and adapted from [SHORiN-KiWATA/Miyu](https://github.com/SHORiN-KiWATA/Miyu), the original Linux terminal AI companion.
+
+> **Original author**: [SHORiN-KiWATA](https://github.com/SHORiN-KiWATA) — all credit for the concept, design, and original implementation goes to them. This is a macOS-focused port with additional features.
+
+## What's Different from the Original
+
+- **macOS native** — stripped Linux-only features (AUR, ALSA, ProtonDB, etc.), added Homebrew integration
+- **Shell integration** — command-not-found handler for fish, bash, and zsh
+- **Session persistence** — per-terminal-window conversations stored as JSON at `~/.miyu/sessions/`
+- **Pre-built binary** — install via Homebrew, no Rust toolchain required
+- **TUI config** — manage LLM providers and models without editing JSON
 
 ## Features
 
@@ -162,8 +172,8 @@ src/
 
 ## Acknowledgments
 
-Inspired by [SHORiN-KiWATA/Miyu](https://github.com/SHORiN-KiWATA/Miyu), the original terminal AI assistant for Linux.
+**Miyu** was originally created by [SHORiN-KiWATA](https://github.com/SHORiN-KiWATA) as a Linux terminal AI assistant. The original project is at [SHORiN-KiWATA/Miyu](https://github.com/SHORiN-KiWATA/Miyu). This macOS port preserves the spirit and design philosophy of the original while adapting it for the Mac ecosystem.
 
 ## License
 
-MIT
+MIT © 2024 SHORiN-KiWATA (original), Shiorangerin (macOS port)
