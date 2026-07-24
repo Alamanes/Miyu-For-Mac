@@ -17,7 +17,7 @@ A terminal AI assistant for macOS. Miyu lives in your shell, intercepts unknown 
 ### Install via Homebrew
 
 ```bash
-brew install shiorangerin/apps/miyu4mac
+brew install orangerin/apps/miyu4mac
 ```
 
 ### Or build from source
