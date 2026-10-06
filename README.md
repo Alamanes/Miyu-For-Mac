@@ -33,7 +33,7 @@ brew install orangerin/apps/miyu4mac
 ### Or build from source
 
 ```bash
-git clone https://github.com/Shiorangerin/Miyu-For-Mac.git
+git clone https://github.com/Alamanes/Miyu-For-Mac.git
 cd Miyu-For-Mac
 cargo build --release
 ./target/release/miyu4mac --version

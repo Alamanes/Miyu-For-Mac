@@ -4,7 +4,7 @@ version = "0.2.1"
 edition = "2021"
 license = "MIT"
 description = "Miyu — a terminal AI assistant for macOS"
-repository = "https://github.com/Shiorangerin/Miyu-For-Mac"
+repository = "https://github.com/Alamanes/Miyu-For-Mac"
 
 [dependencies]
 anyhow = "1.0"
